@@ -199,3 +199,112 @@ alert(age3); // "undefined"
 nullpara atribuir um valor “vazio” ou “desconhecido” a uma variável, 
 enquanto `undefined` undefinedé reservado como valor inicial padrão para itens não atribuídos.*/
 
+
+//Objetos e Símbolos
+
+/*O object tipo é especial.
+
+Todos os outros tipos são chamados de “primitivos” porque seus valores podem
+conter apenas um único elemento (seja uma string, um número ou 
+qualquer outra coisa). Em contraste, os objetos são usados ​​para armazenar 
+coleções de dados e entidades mais complexas.
+
+Sendo tão importantes, os objetos merecem um tratamento especial. 
+Abordaremos o tema deles mais adiante, no capítulo Objetos , depois de aprendermos mais 
+sobre os elementos primitivos.
+
+O symboltipo é usado para criar identificadores únicos para objetos. Precisamos mencioná-lo 
+aqui por uma questão de completude, mas também adiamos os detalhes para 
+quando conhecermos os objetos.*/
+
+
+//O tipo de operador
+
+/* Uma chamada a ` typeof xreturns` retorna uma string com o nome do tipo:
+
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
+
+As três últimas linhas podem precisar de explicações adicionais:
+
+Math é um objeto integrado que fornece operações matemáticas. 
+Aprenderemos sobre ele no capítulo Números. 
+Aqui, ele serve apenas como um exemplo de objeto.
+
+O resultado de typeof null`is` é ` "object".`. 
+Esse é um erro oficialmente reconhecido em `is` typeof, que vem 
+dos primórdios do JavaScript e foi mantido por questões de compatibilidade. 
+Definitivamente, ` nullis` não é um objeto. É um valor especial com um tipo próprio. 
+O comportamento de ` typeofis` está incorreto aqui.
+
+O resultado de typeof alert `is` é `true` "function", porque ` alert is` 
+é uma função. Estudaremos funções nos próximos capítulos, onde também 
+veremos que não existe um tipo "função" específico em JavaScript. Funções 
+pertencem ao tipo `object`. Mas ` typeofis` as trata de forma diferente, 
+retornando `true` "function". Isso também vem dos primórdios do JavaScript. 
+Tecnicamente, esse comportamento não é correto, mas pode ser conveniente na prática.
+
+
+A typeof(x)sintaxe
+Você também pode encontrar outra sintaxe: typeof(x). É o mesmo que typeof x.
+
+Para deixar claro: `x` typeofé um operador, não uma função. 
+Os parênteses aqui não fazem parte de ` typeofx`. 
+São os parênteses usados ​​para agrupamento matemático.
+
+Normalmente, esses parênteses contêm uma expressão matemática, 
+como (2 + 2), mas aqui eles contêm apenas um argumento (x). Sintaticamente, 
+eles permitem evitar um espaço entre o typeofoperador e seu argumento, 
+e algumas pessoas gostam disso.
+
+Algumas pessoas preferem typeof(x), embora a typeof xsintaxe seja muito mais comum.
+
+PODE FICAR UM POUCO CONFUSO MAS SE TU FEZ O CURSO DO GUANABARA TU VAI SABER
+*/
+
+//RESUMO
+
+/*Existem 8 tipos básicos de dados em JavaScript.
+
+Sete tipos de dados primitivos:
+number Para números de qualquer tipo: inteiros ou de ponto flutuante, 
+os inteiros são limitados por .±(253-1)
+
+bigintpara números inteiros de comprimento arbitrário.
+
+stringPara strings. Uma string pode ter zero ou mais caracteres; 
+não existe um tipo separado para caracteres individuais.
+
+booleanpara true/ false.
+
+nullPara valores desconhecidos – um tipo independente que possui um único valor null.
+
+undefinedPara valores não atribuídos – um tipo independente que possui um único valor undefined.
+
+symbolpara identificadores únicos.
+
+E um tipo de dado não primitivo:
+objectpara estruturas de dados mais complexas.
+
+O typeofoperador permite-nos ver qual o tipo de dado armazenado numa variável.
+
+Geralmente usado como typeof x, mas typeof(x)também é possível.
+Retorna uma string com o nome do tipo, como "string".
+
+Para nullretornos "object"– isso é um erro na linguagem, não é realmente um objeto.
+*/
